@@ -4,14 +4,15 @@
   해더
 ==============================================================*/
 header { position: fixed; width: 100%; z-index: 1000;
- .inner { width: 100%; max-width: 1470px; height: 70px; padding: 0 15px; margin: 0 auto; display: flex;
+ .inner { width: 100%; height: 70px; padding: 0 15px; margin: 0 auto; display: flex;
   justify-content: space-between; align-items: center;
   object { pointer-events: none; }
   .logo a { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(106%) contrast(101%); }
+  .logo a object { width: 190px; display: block; }
   .gnb { margin-right: auto; margin-left: 35px;
 
    .gnb_menu { display: flex; gap: 15px; color: #fff;
-    a { display: block; height: 60px; line-height: 3.5; font-weight: 500; font-size: 18px;
+    a { display: block; height: 60px; line-height: 4.2; font-weight: 500; font-size: 14px;
      text-transform: uppercase; position: relative; z-index: 200; }
    }
 
@@ -24,9 +25,9 @@ header { position: fixed; width: 100%; z-index: 1000;
     }
    }
   }
-  .member { display: flex; gap: 15px; margin-top: 10px;
+  .member { display: flex; gap: 15px;
    a { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(106%) contrast(101%); }
-   a object { width: 28px; }
+   a object { width: 24px; display: block; }
   }
  }
 }
@@ -43,15 +44,59 @@ header.on { background: #fff;
 /* ==============================================================
    색션
 ==============================================================*/
-section { position: relative; }
+// 공통
 .swiper-wrapper { width: 100%; height: 100%; }
+.swiper-button-prev::after , .swiper-button-next::after { display: none;}
+.container { max-width: 1470px; margin: 0 auto; padding: 0 15px; position: relative; }
 
+section { position: relative;
+ .swiper-slide { width: 32%; }
+ .swiper-button-prev , .swiper-button-next { color: #cdcdcd; width: 24px; height: 44px;}
+ .swiper-button-next { background: url("../images/arrow-right.svg") no-repeat; right: -44px; }
+ .swiper-button-prev  { background: url("../images/arrow-left.svg") no-repeat; left: -44px }
+ .title { font-size: 60px; font-weight: 700; margin-bottom: 50px; text-transform: uppercase; letter-spacing: -1px; }
+ .content_box { overflow: hidden;
+  .blind {
+   .txt { font-size: 16px; margin-top: 15px; font-weight: 400; }
+   .price { font-size: 18px; font-family: 'Pretendard', sans-serif; font-weight: 600;margin-top: 10px;  display: block;
+    em { padding-left: 5px; font-size: 16px; font-weight: 400; color: rgba(33,33,33,.3); text-decoration: line-through;}
+   }
+  }
+ }
+}
+
+// 색션1
 .hero_wrap { background-color: black; width: 100%; height: 100vh;
  figure { position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 100; opacity: 0.9;}
   video { width: 100%; height: 100%; object-fit: cover; }
-
 }
-.pick_wrap {  width: 100%; height: 100%;
-  .title { font-weight: 800; font-size: 36px; letter-spacing: -1px; margin-bottom: 50px; text-align: center; }
-  .inner { position: relative; }
+
+// 색션2
+.pick_wrap {  width: 100%; height: 100%; overflow: hidden; margin: 0 auto 150px; padding-top: 250px;
+ .title:before { content: ""; position: absolute; left: -40px; top: 0; width: 400px; height: 130px;
+  display: block; background-size: contain; z-index: -1; transform: rotate(-4deg);
+  background:  url("../images/tape-bg.svg") no-repeat; opacity: 0.5; }
+  .content_box { padding-bottom: 45px; position: relative; z-index: 100; overflow: hidden;
+   .swiper-slide { width: 32%; }
+   .inner { position: relative; display: block;
+     img { width: 100%; height: 100%; object-fit: cover; }
+    .txt_box { position: absolute; left: 35px; bottom: 30px; color: white;
+      h2 { font-size: 32px; letter-spacing: -0.5px; display: flex; align-items: center; gap: 5px; font-weight: 500;
+         margin-bottom: -5px; }
+      span { font-size: 12px; padding-left: 5px; }
+      }
+    }
+  }
+}
+
+// 색션3
+.new_wrap { width: 100%; height: 100%; margin: 150px auto;
+ .img_box { overflow: hidden; transition: all 0.3s;
+    img { width: 100%; height: 100%; object-fit: cover;}
+  &:hover { transform: scale(1.02); opacity: 0.8;}
+  }
+}
+
+.banner_wrap.one {
+ height: 350px; background: #ccc;width: 100%;
 }
