@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /* ==============================================================
   해더
 ==============================================================*/
@@ -56,9 +57,9 @@ section { position: relative;
  .swiper-button-prev  { background: url("../images/arrow-left.svg") no-repeat; left: -44px }
  .title { font-size: 60px; font-weight: 700; margin-bottom: 50px; text-transform: uppercase; letter-spacing: -1px; }
  .content_box { overflow: hidden;
-  .blind {
+  .blind { font-family: "Noto Sans KR", sans-serif;
    .txt { font-size: 16px; margin-top: 15px; font-weight: 400; }
-   .price { font-size: 18px; font-family: 'Pretendard', sans-serif; font-weight: 600;margin-top: 10px;  display: block;
+   .price { font-size: 18px; font-weight: 600; margin-top: 10px;  display: block;
     em { padding-left: 5px; font-size: 16px; font-weight: 400; color: rgba(33,33,33,.3); text-decoration: line-through;}
    }
   }
@@ -73,30 +74,74 @@ section { position: relative;
 
 // 색션2
 .pick_wrap {  width: 100%; height: 100%; overflow: hidden; margin: 0 auto 150px; padding-top: 250px;
- .title:before { content: ""; position: absolute; left: -40px; top: 0; width: 400px; height: 130px;
-  display: block; background-size: contain; z-index: -1; transform: rotate(-4deg);
-  background:  url("../images/tape-bg.svg") no-repeat; opacity: 0.5; }
   .content_box { padding-bottom: 45px; position: relative; z-index: 100; overflow: hidden;
    .swiper-slide { width: 32%; }
-   .inner { position: relative; display: block;
-     img { width: 100%; height: 100%; object-fit: cover; }
-    .txt_box { position: absolute; left: 35px; bottom: 30px; color: white;
-      h2 { font-size: 32px; letter-spacing: -0.5px; display: flex; align-items: center; gap: 5px; font-weight: 500;
-         margin-bottom: -5px; }
-      span { font-size: 12px; padding-left: 5px; }
+   .inner { position: relative; display: block; overflow: hidden;
+     img { width: 100%; height: 100%; object-fit: cover; transform: scale(1); transition: transform 0.5s ease; }
+    .txt_box { position: absolute; bottom: 35px; left: 40px; color: white;
+      h2 { font-size: 32px; font-weight: 400; line-height: 1; color: #fff; letter-spacing: -0.025em; margin-bottom: 8px; }
+      h3 { font-weight: 300; font-size: 14px; line-height: 1; margin-bottom: 10px; font-family: "Noto Serif Korean", sans-serif;}
+     .uppercase { display: inline-block; position: relative; color: white; text-transform: uppercase; padding-bottom: 5px;
+      border-bottom: 1px solid rgba(225,225,225,0.5); font-size: 12px; font-weight: 400;
+      .line { position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: white;
+       display: block; transition: width 0.4s ease; z-index: 10; }
+       }
       }
     }
+   .inner:hover {
+    .uppercase > .line { width: 100%;}
+   }
   }
 }
 
 // 색션3
 .new_wrap { width: 100%; height: 100%; margin: 150px auto;
- .img_box { overflow: hidden; transition: all 0.3s;
-    img { width: 100%; height: 100%; object-fit: cover;}
-  &:hover { transform: scale(1.02); opacity: 0.8;}
+ .img_box { overflow: hidden; display: block; max-height: 590px;
+    img { width: 100%; height: 100%; object-fit: cover; transition: all 0.3s; }
+  &:hover {
+     img {  transform: scale(1.05); opacity: 0.8; }
+   }
   }
 }
 
-.banner_wrap.one {
- height: 350px; background: #ccc;width: 100%;
+// 색션4
+.banner_wrap.one { background: #FEF1E0;
+   .container { max-width: 1000px;  display: flex; justify-content: space-around; align-items: center; gap: 10px;}
+ .img_box { position: relative;
+   .bg { position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: #F3E3CA; width: 100%; height: 50%; z-index: 9; border-radius: 30px; }
+    img { position: relative; z-index: 10;}
+  }
+ .txt_box { font-family: "Noto Serif Korean", sans-serif;
+  .top_txt { font-size: 48px; font-weight: 700; margin-bottom: 5px; }
+  .sub_txt { font-size: 44px; font-weight: 500; }
+ }
+}
+
+// 색션5
+.best_wrap { width: 100%; height: 100%; margin: 150px auto;
+ .img_box { overflow: hidden; display: block; max-height: 590px;
+  img { width: 100%; height: 100%; object-fit: cover; transform: scale(1); transition: transform 0.5s ease; }
+  &:hover {
+   img {  transform: scale(1.1); opacity: 0.8; }
+  }
+ }
+}
+
+.banner_wrap.two { position: relative; width: 100%;
+ .container { position: initial; }
+ .bg { position: absolute; left: 0; top: 0; background: rgba(0,0,0,0.15);width: 100%;
+  height: 100%; z-index: 9;
+ }
+ .bg_img { position: absolute; left: 0; top: 0; width: 100%;height: 100%;
+  background: url("../images/banner-02.jpg") no-repeat; background-position: center; background-size: cover;
+  background-attachment: fixed; z-index: 8;
+ }
+.info_box { position: relative; z-index: 10; color: white; text-align: center; padding: 350px 0 45px;
+ p { font-size: 42px; font-weight: 600; letter-spacing: 15px; }
+ .uppercase { display: inline-block; position: relative; color: white; text-transform: uppercase; padding-bottom: 10px; border-bottom: 1px solid rgba(225,225,225,0.5);
+  .line { position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: white;
+   display: block; transition: width 0.4s ease; z-index: 10; }
+  &:hover .line { width: 100%; }
+ }
+  }
 }

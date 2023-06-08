@@ -33,3 +33,18 @@ const newWrap = new Swiper('.new_wrap .content_box', {
         loadPrevNext : true
     },
 });
+const bestWrap = new Swiper('.best_wrap .content_box', {
+    direction: "horizontal",
+    slidesPerGroup : 1,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    loopAdditionalSlides : 1,
+    navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next"
+    },
+    lazy : {
+        loadPrevNext : true
+    },
+});
