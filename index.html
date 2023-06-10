@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>지오다노</title>
+    <link href="assets/reset.css" rel="stylesheet">
+    <link href="assets/main.css" rel="stylesheet">
     <!-- SWIPER 외부 라이브러리 연결-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/main.css">
+    <link href="assets/swiper-bundle.min.css" rel="stylesheet">
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/jquery-1.8.3.min.js"></script>
+
+    <script defer src="js/main.js"></script>
     <script defer src="js/custom.js"></script>
 </head>
 <body>
@@ -18,196 +21,101 @@
     <div class="inner">
         <h1 class="logo">
             <a href="javascript:">
-            <object data="/images/logo.svg" type="image/svg+xml" aria-label="지오다노로고"></object>
+                <object aria-label="지오다노로고" data="/images/logo.svg" type="image/svg+xml"></object>
             </a>
         </h1>
-        <nav class="gnb">
-            <ul class="gnb_menu">
-                <li>
-                    <a href="javascript:">new</a>
-                    <div class="gnb_cate">
-                        <ul class="dep1">
-                            <li>
-                                <h2>23S/S NEW 10%</h2>
-                                <a href="javascript:">men</a>
-                                <a href="javascript:">women</a>
-                            </li>
-                            <li>
-                                <a href="javascript:">#5월의 해피 피그닉</a>
-                                <ul class="dep2">
-                                    <li><a href="javascript:">point top</a></li>
-                                    <li><a href="javascript:">basic top</a></li>
-                                    <li><a href="javascript:">denim</a></li>
-                                    <li><a href="javascript:">g-motion</a></li>
-                                    <li><a href="javascript:">ACC/UNDERWEAR</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:">best</a>
-                    <div class="gnb_cate">
-                        <ul class="dep1">
-                            <li>
-                                <h2>지오다노 best20</h2>
-                                <a href="javascript:">men</a>
-                                <a href="javascript:">women</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:">men</a>
-                    <div class="gnb_cate">
-                        <ul class="dep1">
-                            <li><a href="javascript:">md's pick</a></li>
-                            <li>
-                                <a href="javascript:">tops</a>
-                                <ul class="dep2">
-                                    <li><a href="javascript:">반팔티/테리</a></li>
-                                    <li><a href="javascript:">긴팔티/테리</a></li>
-                                    <li><a href="javascript:">셔츠</a></li>
-                                    <li><a href="javascript:">스웨터/가디건</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:">bottom</a>
-                                <ul class="dep2">
-                                    <li><a href="javascript:">데님</a></li>
-                                    <li><a href="javascript:">면바지</a></li>
-                                    <li><a href="javascript:">치노/링클리프리</a></li>
-                                    <li><a href="javascript:">슬랙스</a></li>
-                                    <li><a href="javascript:">데님</a></li>
-                                    <li><a href="javascript:">반바지</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:">outer</a>
-                                <ul class="dep2">
-                                    <li><a href="javascript:">자켓/블레이저</a></li>
-                                    <li><a href="javascript:">코드</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="javascript:">ACC/UNDERWEAR</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:">women</a>
-                    <div class="gnb_cate">
-                        <ul class="dep1">
-                            <li><a href="javascript:">md's pick</a></li>
-                            <li>
-                                <a href="javascript:">toos</a>
-                                <ul class="dep2">
-                                    <li><a href="javascript:">반팔티/테리</a></li>
-                                    <li><a href="javascript:">긴팔티/테리</a></li>
-                                    <li><a href="javascript:">셔츠</a></li>
-                                    <li><a href="javascript:">스웨터/가디건</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:">bottom</a>
-                                <ul class="dep2">
-                                    <li><a href="javascript:">데님</a></li>
-                                    <li><a href="javascript:">면바지</a></li>
-                                    <li><a href="javascript:">치노/링클리프리</a></li>
-                                    <li><a href="javascript:">슬랙스</a></li>
-                                    <li><a href="javascript:">데님</a></li>
-                                    <li><a href="javascript:">반바지</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:">outer</a>
-                            </li>
-                            <li><a href="javascript:">ACC/UNDERWEAR</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:">sale</a>
-                    <div class="gnb_cate">
-                        <ul class="dep1">
-                            <li><a href="javascript:">HAPPY HOUR</a></li>
-                            <li><a href="javascript:">last chance</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:">review</a>
-                    <div class="gnb_cate">
-                        <ul class="dep1">
-                            <li><a href="javascript:">#실시간리뷰</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:">event</a>
-                    <div class="gnb_cate">
-                        <ul class="dep1">
-                            <li><a href="javascript:">md's pick</a></li>
-                            <li>
-                                <a href="javascript:">toos</a>
-                                <ul class="dep2">
-                                    <li><a href="javascript:">반팔티/테리</a></li>
-                                    <li><a href="javascript:">긴팔티/테리</a></li>
-                                    <li><a href="javascript:">셔츠</a></li>
-                                    <li><a href="javascript:">스웨터/가디건</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:">bottom</a>
-                                <ul class="dep2">
-                                    <li><a href="javascript:">데님</a></li>
-                                    <li><a href="javascript:">면바지</a></li>
-                                    <li><a href="javascript:">치노/링클리프리</a></li>
-                                    <li><a href="javascript:">슬랙스</a></li>
-                                    <li><a href="javascript:">데님</a></li>
-                                    <li><a href="javascript:">반바지</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:">outer</a>
-                            </li>
-                            <li><a href="javascript:">ACC/UNDERWEAR</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:">magazine</a>
-                    <div class="gnb_cate">
-                        <ul class="dep1">
-                            <li><a href="javascript:">23ss lookbook</a></li>
-                            <li><a href="javascript:">vibeo</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:">고객지원</a>
-                    <div class="gnb_cate">
-                        <ul class="dep1">
-                            <li><a href="javascript:">전체</a></li>
-                            <li><a href="javascript:">상품문의</a></li>
-                            <li><a href="javascript:">주문/배송</a></li>
-                            <li><a href="javascript:">반품/교환</a></li>
-                            <li><a href="javascript:">쿠폰/적립금</a></li>
-                            <li><a href="javascript:">매장관련</a></li>
-                            <li><a href="javascript:">기타</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+        <ul class="gnb">
+            <li>
+                <a href="javascript:">new</a>
+                <ul class="gnb_cate">
+                    <li>
+                        <a href="javascript:">men</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">women</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:">best</a>
+                <ul class="gnb_cate">
+                    <li>
+                        <a href="javascript:">men</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">women</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:">men</a>
+                <ul class="gnb_cate">
+                    <li><a href="javascript:">tops</a></li>
+                    <li><a href="javascript:">bottom</a></li>
+                    <li><a href="javascript:">outer</a></li>
+                    <li><a href="javascript:">ACC/UNDERWEAR</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:">women</a>
+                <ul class="gnb_cate">
+                    <li><a href="javascript:">tops</a></li>
+                    <li><a href="javascript:">bottom</a></li>
+                    <li><a href="javascript:">outer</a></li>
+                    <li><a href="javascript:">ACC/UNDERWEAR</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:">sale</a>
+                <ul class="gnb_cate">
+                    <li><a href="javascript:">HAPPY HOUR</a></li>
+                    <li><a href="javascript:">last chance</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:">review</a>
+                <ul class="gnb_cate">
+                    <li><a href="javascript:">실시간리뷰</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:">event</a>
+                <ul class="gnb_cate">
+                    <li><a href="javascript:">tops</a></li>
+                    <li><a href="javascript:">bottom</a></li>
+                    <li><a href="javascript:">outer</a></li>
+                    <li><a href="javascript:">ACC/UNDERWEAR</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:">magazine</a>
+                <ul class="gnb_cate">
+                    <li><a href="javascript:">23SS lookbook</a></li>
+                    <li><a href="javascript:">vibeo</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:">고객지원</a>
+                <ul class="gnb_cate">
+                    <li><a href="javascript:">전체</a></li>
+                    <li><a href="javascript:">상품문의</a></li>
+                    <li><a href="javascript:">주문/배송</a></li>
+                    <li><a href="javascript:">반품/교환</a></li>
+                    <li><a href="javascript:">쿠폰/적립금</a></li>
+                    <li><a href="javascript:">매장관련</a></li>
+                    <li><a href="javascript:">기타</a></li>
+                </ul>
+            </li>
+        </ul>
         <div class="member">
             <a href="javascript:">
-                <object data="/images/user-icon.svg" type="image/svg+xml" aria-label="마이페이지"></object>
+                <object aria-label="마이페이지" data="/images/user-icon.svg" type="image/svg+xml"></object>
             </a>
             <a href="javascript:">
-                <object data="/images/search-icon.svg" type="image/svg+xml" aria-label="검색"></object>
+                <object aria-label="검색" data="/images/search-icon.svg" type="image/svg+xml"></object>
             </a>
             <a href="javascript:">
-                <object data="/images/cart-icon.svg" type="image/svg+xml" aria-label="장바구니"></object>
+                <object aria-label="장바구니" data="/images/cart-icon.svg" type="image/svg+xml"></object>
             </a>
         </div>
     </div>
@@ -215,7 +123,7 @@
 <main>
     <section class="hero_wrap">
         <figure>
-            <video src="images/bg.mp4" muted autoplay loop></video>
+            <video autoplay loop muted src="images/bg.mp4"></video>
         </figure>
     </section>
     <section class="pick_wrap">
@@ -224,8 +132,8 @@
             <div class="content_box">
                 <div class="swiper-wrapper">
                     <article class="swiper-slide">
-                        <a href="javascript:" class="inner">
-                            <img src="/images/pink-01.jpg" alt="지오다노 여름">
+                        <a class="inner" href="javascript:">
+                            <img alt="지오다노 여름" src="/images/pink-01.jpg">
                             <div class="txt_box">
                                 <h2>GOTO IN THE SUMMER</h2>
                                 <h3>공식몰 단독 전품목 20%쿠폰 지급</h3>
@@ -237,8 +145,8 @@
                         </a>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="inner">
-                            <img src="/images/pink-02.jpg" alt="지오다노 패스티벌">
+                        <a class="inner" href="javascript:">
+                            <img alt="지오다노 패스티벌" src="/images/pink-02.jpg">
                             <div class="txt_box">
                                 <h2>GOLIDAY FLASH</h2>
                                 <h3>23SS 지오다노 패스티벌</h3>
@@ -250,8 +158,8 @@
                         </a>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="inner">
-                            <img src="/images/pink-03.jpg" alt="여름 패스티벌">
+                        <a class="inner" href="javascript:">
+                            <img alt="여름 패스티벌" src="/images/pink-03.jpg">
                             <div class="txt_box">
                                 <h2>SUMMER FESTIVAL</h2>
                                 <h3>23SS 여름 패스티벌</h3>
@@ -263,8 +171,8 @@
                         </a>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="inner">
-                            <img src="/images/pink-04.jpg" alt="무엇을 입을까">
+                        <a class="inner" href="javascript:">
+                            <img alt="무엇을 입을까" src="/images/pink-04.jpg">
                             <div class="txt_box">
                                 <h2>WHAT I WEAR</h2>
                                 <h3>THE GOTO IN</h3>
@@ -276,8 +184,8 @@
                         </a>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="inner">
-                            <img src="/images/pink-05.jpg" alt="지오다노 여름 티셔츠">
+                        <a class="inner" href="javascript:">
+                            <img alt="지오다노 여름 티셔츠" src="/images/pink-05.jpg">
                             <div class="txt_box">
                                 <h2>GOTO T - SHIRTS COLL</h2>
                                 <span>VIEW MORE</span>
@@ -285,8 +193,8 @@
                         </a>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="inner">
-                            <img src="/images/pink-06.jpg" alt="지오다노 홈웨어">
+                        <a class="inner" href="javascript:">
+                            <img alt="지오다노 홈웨어" src="/images/pink-06.jpg">
                             <div class="txt_box">
                                 <h2>HOME UNDERWEAR</h2>
                                 <h3>지오다노 홈웨어</h3>
@@ -308,8 +216,8 @@
             <div class="content_box">
                 <div class="swiper-wrapper">
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/new-01.jpg" alt="여름신상품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="여름신상품" src="/images/new-01.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">차은우 코튼 베이직 폴로 피케</h2>
@@ -317,8 +225,8 @@
                         </div>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/new-02.jpg" alt="여름신상품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="여름신상품" src="/images/new-02.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">차은우 울트라스트레치 테이퍼드핏 치노팬츠</h2>
@@ -326,8 +234,8 @@
                         </div>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/new-03.jpg" alt="여름신상품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="여름신상품" src="/images/new-03.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">차은우 코튼 레이온 린넨 셔츠</h2>
@@ -335,8 +243,8 @@
                         </div>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/new-04.jpg" alt="여름신상품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="여름신상품" src="/images/new-04.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">차은우 코튼 프린트 티셔츠</h2>
@@ -344,8 +252,8 @@
                         </div>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/new-05.jpg" alt="여름신상품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="여름신상품" src="/images/new-05.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">차은우 헤비코튼 오버사이즈 티셔츠</h2>
@@ -353,8 +261,8 @@
                         </div>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/new-06.jpg" alt="여름신상품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="여름신상품" src="/images/new-06.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt"> 차은우 폴로넥 반팔 스웨터</h2>
@@ -371,7 +279,7 @@
         <div class="container">
             <div class="img_box">
                 <div class="bg"></div>
-                <img src="images/banner-01.png" alt="배너이미지">
+                <img alt="배너이미지" src="images/banner-01.png">
             </div>
             <div class="txt_box">
                 <p class="top_txt">한소희 X 지오다노</p>
@@ -385,8 +293,8 @@
             <div class="content_box">
                 <div class="swiper-wrapper">
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/best-01.jpg" alt="베스트제품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="베스트제품" src="/images/best-01.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">헤비코튼 저지 크루넥 티셔츠</h2>
@@ -394,8 +302,8 @@
                         </div>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/best-02.jpg" alt="베스트제품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="베스트제품" src="/images/best-02.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">차은우 폰테 오버사이즈 크루넥 티셔츠</h2>
@@ -403,8 +311,8 @@
                         </div>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/best-03.jpg" alt="베스트제품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="베스트제품" src="/images/best-03.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">반팔 크루넥 티셔츠</h2>
@@ -412,8 +320,8 @@
                         </div>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/best-04.jpg" alt="베스트제품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="베스트제품" src="/images/best-04.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">코튼 클래식맨 프린트 티셔츠</h2>
@@ -421,8 +329,8 @@
                         </div>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/best-05.jpg" alt="베스트제품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="베스트제품" src="/images/best-05.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">린넨 100% 셔츠</h2>
@@ -430,8 +338,8 @@
                         </div>
                     </article>
                     <article class="swiper-slide">
-                        <a href="javascript:" class="img_box">
-                            <img src="/images/best-06.jpg" alt="베스트제품">
+                        <a class="img_box" href="javascript:">
+                            <img alt="베스트제품" src="/images/best-06.jpg">
                         </a>
                         <div class="blind">
                             <h2 class="txt">차은우 코튼 옥스포드 반팔 셔츠</h2>
@@ -450,23 +358,191 @@
             <div class="bg_img"></div>
             <div class="info_box">
                 <p>GIO MAGAZINE</p>
-                <a href="javascript:" class="uppercase">
+                <a class="uppercase" href="javascript:">
                     view more
                     <div class="line"></div>
                 </a>
             </div>
         </div>
     </section>
-    <section>인스타</section>
-    <section>브랜드 사이트</section>
+    <section class="sns_wrap">
+        <div class="top_box">
+            <h2 class="top_txt">follow instagram</h2>
+            <a class="sub_txt" href="javascript:">@giordanokr<span class="line"></span></a>
+            <div class="list_box">
+                <div class="sns_swiper" dir="ltr">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-01.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-02.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-03.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-04.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-05.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-06.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-01.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-02.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-03.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-04.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-05.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-06.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sns_swiper" dir="rtl">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-07.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-08.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-09.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-10.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-11.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-12.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-07.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-08.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-09.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-10.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-11.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:">
+                                <img alt="인스타이미지" src="images/sns-12.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-<footer></footer>
+<footer class="footer_wrap">
+    <div class="container">
+        <div class="board">
+            <div class="menu_list">
+                <a href="javascript:">brand</a>
+                <a href="javascript:">event</a>
+                <a href="javascript:">review</a>
+                <a href="javascript:">store</a>
+                <a href="javascript:">family site</a>
+            </div>
+            <div class="info_list">
+                <a href="javascript:">이용약관</a>
+                <a href="javascript:">개인정보처리방침</a>
+                <a href="javascript:">자주묻는질문</a>
+                <a href="javascript:">1:1문의</a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="info_txt">
+                <p> 고객센터 : 080-934-3000<span class="bt_line"></span>Email : support@giordano.co.kr<span
+                        class="bt_line"></span>운영시간 : 10:00 ~ 17:00 (점심 12:00 ~ 13:00 / 주말 및 공휴일 휴무)</p>
+                <p>㈜지오다노<span class="bt_line"></span>서울특별시 서초구 강남대로65길 1(서초동) 효봉빌딩 FAX 02-534-2994<span
+                        class="bt_line"></span> 대표자 한준석 개인정보보호책임자 김명희</p>
+                <p>사업자등록번호 116-81-47798<span class="bt_line"></span>통신판매업신고 2004-서울서초-04585</p>
+            </div>
+            <div class="bottom_box">
+                <p>Copyright ⓒ GIORDANO Corp. All Rights Reserved.</p>
+                <div class="sns">
+                    <a href="javascript:">
+                        <object aria-label="페이스북" data="/images/facebook-icon.svg" type="image/svg+xml"></object>
+                    </a>
+                    <a href="javascript:">
+                        <object aria-label="인스타그램" data="/images/instagram-icon.svg" type="image/svg+xml"></object>
+                    </a>
+                    <a href="javascript:">
+                        <object aria-label="유투브" data="/images/youtube-icon.svg" type="image/svg+xml"></object>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
-<script>
-    $(document).ready(function () {
-        pickWrap();
-        newWrap();
-        bestWrap();
-    });
-</script>
 </html>

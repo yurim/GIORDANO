@@ -48,3 +48,32 @@ const bestWrap = new Swiper('.best_wrap .content_box', {
         loadPrevNext : true
     },
 });
+
+
+const snsSwiper = new Swiper('.sns_wrap .sns_swiper', {
+    loop: true,
+    slidesPerGroup : 1,
+    slidesPerView: "auto",
+    speed: 5000,
+    spaceBetween: 30,
+    loopAdditionalSlides : 1,
+    resistance : false,
+    observer: true,
+    observeParents: true,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+
+});
+
+
+// let $slides = document.querySelectorAll('.swiper-slide');
+// for (let i of $slides) {
+//     i.addEventListener('mouseover', function(){
+//         snsSwiper.autoplay.stop();
+//     });
+//     i.addEventListener('mouseout', function(){
+//         snsSwiper.autoplay.start();
+//     });
+// }
