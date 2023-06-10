@@ -17,7 +17,7 @@
 //     }
 // });
 const gnb = document.querySelector('.gnb>li>a');
-const gnbSub = document.querySelectorAll('.gnb > li > .gnb_cate');
+const gnbSub = document.querySelector('.gnb > li > .gnb_cate');
 const Header = document.querySelector('header');
 
 
@@ -30,12 +30,12 @@ document.addEventListener('scroll', function(){
     }
 })
 
-gnb.addEventListener('mouseover', function(){
-    gnbSub.classList.add('on');
-    Header.style.background = '#fff';
-});
-        // 마우스가 떠나갈 때 실행됨.
-gnb.addEventListener('mouseleave', function(){
-    gnbSub.classList.remove('on');
-    Header.style.background = 'none';
-});
+// gnb.addEventListener('mouseover', function(){
+//     gnbSub.classList.add('on');
+//     Header.style.background = '#fff';
+// });
+//         // 마우스가 떠나갈 때 실행됨.
+// gnb.addEventListener('mouseleave', function(){
+//     gnbSub.classList.remove('on');
+//     Header.style.background = 'none';
+// });
