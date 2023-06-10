@@ -30,12 +30,12 @@ document.addEventListener('scroll', function(){
     }
 })
 
-// gnb.addEventListener('mouseover', function(){
-//     gnbSub.classList.add('on');
-//     Header.style.background = '#fff';
-// });
-//         // 마우스가 떠나갈 때 실행됨.
-// gnb.addEventListener('mouseleave', function(){
-//     gnbSub.classList.remove('on');
-//     Header.style.background = 'none';
-// });
+gnb.addEventListener('mouseover', function(){
+    gnbSub.classList.add('on');
+    Header.style.background = '#fff';
+});
+        // 마우스가 떠나갈 때 실행됨.
+gnb.addEventListener('mouseleave', function(){
+    gnbSub.classList.remove('on');
+    Header.style.background = 'none';
+});
