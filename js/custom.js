@@ -6,10 +6,10 @@ const pickWrap = new Swiper('.pick_wrap .content_box', {
     loop: true,
     loopAdditionalSlides : 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
     speed: 500, //스와이프 되는 속도
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: true
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+    },
     scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true,
@@ -25,6 +25,10 @@ const newWrap = new Swiper('.new_wrap .content_box', {
     spaceBetween: 30,
     loop: true,
     loopAdditionalSlides : 1,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+    },
     navigation: {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next"
@@ -40,6 +44,10 @@ const bestWrap = new Swiper('.best_wrap .content_box', {
     spaceBetween: 30,
     loop: true,
     loopAdditionalSlides : 1,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+    },
     navigation: {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next"
@@ -64,16 +72,4 @@ const snsSwiper = new Swiper('.sns_wrap .sns_swiper', {
         delay: 0,
         disableOnInteraction: false,
     },
-
 });
-
-
-// let $slides = document.querySelectorAll('.swiper-slide');
-// for (let i of $slides) {
-//     i.addEventListener('mouseover', function(){
-//         snsSwiper.autoplay.stop();
-//     });
-//     i.addEventListener('mouseout', function(){
-//         snsSwiper.autoplay.start();
-//     });
-// }
