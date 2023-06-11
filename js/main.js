@@ -15,7 +15,12 @@ $('.gnb>li').hover(function (e) {
         $('.logo a').css('filter', 'inherit');
         $('.gnb').css("color","#1A1A1A");
         $('.member a').css("filter","inherit");
-    } else { }
+    } else {
+        $('header').css({"background-color":"","border-bottom":""});
+        $('.logo a').css('filter', '');
+        $('.gnb').css("color","");
+        $('.member a').css("filter","");
+    }
     $('.gnb>li').find('.sub').hide()
 });
 function menu() {
