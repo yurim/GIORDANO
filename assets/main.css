@@ -174,13 +174,15 @@ section {
           line-height: 1;
           color: #fff;
           letter-spacing: -0.025em;
-          margin-bottom: 8px; }
+          margin-bottom: 8px;
+          transition-duration: 0.4s; }
         .pick_wrap .content_box .inner .txt_box h3 {
           font-weight: 300;
           font-size: 14px;
           line-height: 1;
           margin-bottom: 10px;
-          font-family: "Noto Serif Korean", sans-serif; }
+          font-family: "Noto Serif Korean", sans-serif;
+          transition-duration: 0.6s; }
         .pick_wrap .content_box .inner .txt_box .uppercase {
           display: inline-block;
           position: relative;
@@ -189,7 +191,8 @@ section {
           padding-bottom: 5px;
           border-bottom: 1px solid rgba(225, 225, 225, 0.5);
           font-size: 12px;
-          font-weight: 400; }
+          font-weight: 400;
+          transition-duration: 0.8s; }
           .pick_wrap .content_box .inner .txt_box .uppercase .line {
             position: absolute;
             left: 0;
@@ -241,10 +244,12 @@ section {
     color: white; }
     .banner_wrap.one .banner_box .txt_box h2 {
       font-size: 32px;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      transition-duration: 0.4s; }
     .banner_wrap.one .banner_box .txt_box p {
       font-weight: 100;
-      font-size: 13px; }
+      font-size: 13px;
+      transition-duration: 0.6s; }
     .banner_wrap.one .banner_box .img_box {
       height: 70px;
       position: relative; }
@@ -315,7 +320,8 @@ section {
       font-size: 42px;
       font-weight: 600;
       letter-spacing: 15px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      transition-duration: 0.2s; }
     .banner_wrap.two .info_box .uppercase {
       display: inline-block;
       position: relative;
@@ -330,6 +336,7 @@ section {
         width: 0;
         height: 1px;
         background: white;
+        transition-duration: 0.4s;
         display: block;
         transition: width 0.4s ease;
         z-index: 10; }
@@ -347,14 +354,16 @@ section {
     text-align: center;
     font-weight: 700; }
     .sns_wrap .top_box .top_txt {
-      font-size: 26px; }
+      font-size: 26px;
+      transition-duration: 0.2s; }
     .sns_wrap .top_box .sub_txt {
       font-size: 60px;
       margin-bottom: 60px;
       display: inline-block;
       position: relative;
       padding-bottom: 10px;
-      border-bottom: 2px solid rgba(225, 225, 225, 0.5); }
+      border-bottom: 2px solid rgba(225, 225, 225, 0.5);
+      transition-duration: 0.4s; }
       .sns_wrap .top_box .sub_txt .line {
         position: absolute;
         left: 0;
