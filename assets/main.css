@@ -6,7 +6,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  transition: all 0.3s; }
+  transition: all 0.2s; }
   header .inner {
     width: 100%;
     height: 70px;
@@ -46,15 +46,18 @@ header {
         top: 71px;
         background: #fcfcfc;
         display: none;
-        display: flex;
         padding: 30px 0 30px 240px;
-        gap: 15px;
         z-index: 200;
         font-family: "Noto Sans KR", sans-serif; }
-        header .inner .gnb .sub a {
-          color: #9a9a9a;
-          display: block;
-          text-transform: uppercase; }
+        header .inner .gnb .sub li {
+          display: inline-block;
+          margin-right: 15px; }
+          header .inner .gnb .sub li a {
+            color: #9a9a9a;
+            display: block;
+            text-transform: uppercase; }
+          header .inner .gnb .sub li:last-child {
+            margin-right: 0; }
     header .inner .member {
       display: flex;
       gap: 15px; }
