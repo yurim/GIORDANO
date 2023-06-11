@@ -48,8 +48,7 @@ header {
         display: none;
         padding: 30px 0 30px 240px;
         z-index: 200;
-        font-family: "Noto Sans KR", sans-serif;
-        border-top: 1px solid #eaeaea; }
+        font-family: "Noto Sans KR", sans-serif; }
         header .inner .gnb .sub li {
           display: inline-block;
           margin-right: 15px; }

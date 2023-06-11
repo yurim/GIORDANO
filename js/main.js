@@ -11,12 +11,12 @@ $('.gnb>li').hover(function (e) {
     ofTop = $('.pick_wrap').offset().top - 60;
     if (scroll >= ofTop) {
         $('.header').addClass('on');
-        $('header').css({"background-color":"#fff"});
+        $('header').css({"background-color":"#fff","border-bottom":"solid 1px #eaeaea"});
         $('.logo a').css('filter', 'inherit');
         $('.gnb').css("color","#1A1A1A");
         $('.member a').css("filter","inherit");
     } else {
-        $('header').css({"background-color":""});
+        $('header').css({"background-color":"","border-bottom":""});
         $('.logo a').css('filter', '');
         $('.gnb').css("color","");
         $('.member a').css("filter","");
