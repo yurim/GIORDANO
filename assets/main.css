@@ -43,17 +43,17 @@ header {
         position: absolute;
         width: 100%;
         left: 0;
-        top: 71px;
-        background: #fcfcfc;
+        top: 70px;
+        background: rgba(252, 252, 252, 0.9);
         display: none;
         padding: 30px 0 30px 240px;
         z-index: 200;
-        font-family: "Noto Sans KR", sans-serif; }
+        font-family: "Noto Sans KR", sans-serif;
+        border-top: 1px solid #eaeaea; }
         header .inner .gnb .sub li {
           display: inline-block;
           margin-right: 15px; }
           header .inner .gnb .sub li a {
-            color: #9a9a9a;
             display: block;
             text-transform: uppercase; }
           header .inner .gnb .sub li:last-child {
@@ -66,13 +66,6 @@ header {
       header .inner .member a object {
         width: 24px;
         display: block; }
-
-header.on .inner .logo a {
-  filter: inherit; }
-header.on .inner .gnb {
-  color: #1A1A1A; }
-header.on .inner .member a {
-  filter: inherit; }
 
 /* ==============================================================
    색션
@@ -228,37 +221,47 @@ section {
       opacity: 0.8; }
 
 .banner_wrap.one {
-  background: #FEF1E0; }
-  .banner_wrap.one .container {
-    max-width: 1000px;
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box; }
+  .banner_wrap.one .banner_box:first-child {
+    background: #1A1A1A; }
+    .banner_wrap.one .banner_box:first-child .img_box p {
+      color: #1A1A1A; }
+  .banner_wrap.one .banner_box:last-child {
+    background: #b3e0f3;
+    color: #1A1A1A; }
+  .banner_wrap.one .banner_box {
     display: flex;
-    justify-content: space-around;
+    flex: 1;
+    height: 130px;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px; }
-  .banner_wrap.one .img_box {
-    position: relative; }
-    .banner_wrap.one .img_box .bg {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background: #F3E3CA;
-      width: 100%;
-      height: 50%;
-      z-index: 9;
-      border-radius: 30px; }
-    .banner_wrap.one .img_box img {
-      position: relative;
-      z-index: 10; }
-  .banner_wrap.one .txt_box {
-    font-family: "Noto Serif Korean", sans-serif; }
-    .banner_wrap.one .txt_box .top_txt {
-      font-size: 48px;
-      font-weight: 700;
+    padding: 0 25px;
+    color: white; }
+    .banner_wrap.one .banner_box .txt_box h2 {
+      font-size: 32px;
       margin-bottom: 5px; }
-    .banner_wrap.one .txt_box .sub_txt {
-      font-size: 44px;
-      font-weight: 500; }
+    .banner_wrap.one .banner_box .txt_box p {
+      font-weight: 100;
+      font-size: 13px; }
+    .banner_wrap.one .banner_box .img_box {
+      height: 70px;
+      position: relative; }
+      .banner_wrap.one .banner_box .img_box p {
+        position: absolute;
+        left: 50%;
+        top: calc(50% - 2px);
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -1px; }
+      .banner_wrap.one .banner_box .img_box img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 10; }
 
 .best_wrap {
   width: 100%;
@@ -384,62 +387,47 @@ section {
         top: 0; }
 
 /* ==============================================================
-   색션
+  푸터
 ==============================================================*/
 .footer_wrap {
-  background: #1A1A1A;
-  color: white;
   font-family: "Noto Sans KR", sans-serif;
-  padding: 65px 0; }
-  .footer_wrap .board {
+  padding: 50px 0;
+  border-top: 1px solid #eaeaea; }
+  .footer_wrap .top_box {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 18px; }
-    .footer_wrap .board .menu_list {
+    margin-bottom: 50px; }
+    .footer_wrap .top_box h2 {
+      font-size: 18px;
+      margin-bottom: 10px; }
+    .footer_wrap .top_box .site_list {
       display: flex;
-      text-transform: uppercase;
-      gap: 15px; }
-      .footer_wrap .board .menu_list a {
-        transition: opacity 426ms cubic-bezier(0.4, 0.9, 0.3, 1); }
-      .footer_wrap .board .menu_list a:hover {
-        opacity: 0.4; }
-    .footer_wrap .board .info_list {
-      display: flex;
-      gap: 15px; }
-      .footer_wrap .board .info_list a {
-        opacity: 0.4;
-        font-weight: 100;
-        transition: opacity 426ms cubic-bezier(0.4, 0.9, 0.3, 1); }
-      .footer_wrap .board .info_list a:nth-child(2) {
-        font-weight: 300;
-        opacity: 1; }
-      .footer_wrap .board .info_list a:hover {
-        opacity: 1; }
-  .footer_wrap .bottom .info_txt {
-    margin: 55px auto 75px;
-    font-weight: 300; }
-    .footer_wrap .bottom .info_txt .bt_line {
-      background: url("/images/bt_bar.png") no-repeat 50%;
-      width: 1px;
-      height: 12px;
-      display: inline-block;
-      margin: 0 12px -1px 15px; }
-    .footer_wrap .bottom .info_txt p + p {
-      margin-top: 15px; }
-  .footer_wrap .bottom .bottom_box {
-    display: flex;
-    justify-content: space-between; }
-    .footer_wrap .bottom .bottom_box p {
-      opacity: 0.4;
-      font-weight: 300; }
-    .footer_wrap .bottom .bottom_box .sns {
+      flex-flow: column; }
+      .footer_wrap .top_box .site_list a {
+        color: #858585;
+        font-size: 15px; }
+      .footer_wrap .top_box .site_list a + a {
+        margin-top: 5px; }
+    .footer_wrap .top_box .community p {
+      color: #858585;
+      font-size: 15px; }
+    .footer_wrap .top_box .community p + p {
+      margin-top: 5px; }
+    .footer_wrap .top_box .sns {
       display: flex;
       gap: 15px; }
-      .footer_wrap .bottom .bottom_box .sns a {
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(106%) contrast(101%); }
-      .footer_wrap .bottom .bottom_box .sns a object {
-        pointer-events: none;
-        width: 28px; }
+      .footer_wrap .top_box .sns object {
+        width: 30px; }
+  .footer_wrap .bottom_box {
+    color: #555;
+    font-size: 13px;
+    letter-spacing: 0.25px;
+    word-break: keep-all; }
+    .footer_wrap .bottom_box .info_list {
+      margin-bottom: 30px; }
+    .footer_wrap .bottom_box .type01 {
+      margin-bottom: 30px; }
+    .footer_wrap .bottom_box .type02 {
+      margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
