@@ -40,7 +40,12 @@ function menu() {
         $('.member a').css("filter","");
     }
 }
-menu();
+
 $(window).scroll(function () {
-    menu()
-})
+    menu();
+});
+
+window.onbeforeunload = function () { $('.loading').show(); }
+$(window).load(function () {
+    $('.loading').hide();
+});
