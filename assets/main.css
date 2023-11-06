@@ -79,8 +79,7 @@ header {
   display: none; }
 
 .container {
-  max-width: 1470px;
-  min-width: 1470px;
+  max-width: 1540px;
   margin: 0 auto;
   padding: 0 15px;
   position: relative; }
@@ -92,13 +91,14 @@ section {
   section .swiper-button-prev, section .swiper-button-next {
     color: #cdcdcd;
     width: 24px;
-    height: 44px; }
+    height: 44px;
+    margin-top: 0; }
   section .swiper-button-next {
     background: url("../images/arrow-right.svg") no-repeat;
-    right: -44px; }
+    right: -34px; }
   section .swiper-button-prev {
     background: url("../images/arrow-left.svg") no-repeat;
-    left: -44px; }
+    left: -34px; }
   section .title {
     font-size: 60px;
     font-weight: 700;

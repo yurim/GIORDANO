@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634b7cc6-735b-479d-8180-2bf9d61f8902" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/.sass-cache/aac6fe663ff1947aa3cec99211eb4feb0dd26520/main.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/.sass-cache/aac6fe663ff1947aa3cec99211eb4feb0dd26520/main.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/reset.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +42,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699269740604</updated>
-      <workItem from="1699269741963" duration="247000" />
+      <workItem from="1699269741963" duration="1667000" />
     </task>
+    <task id="LOCAL-00001" summary="리드미 추가">
+      <created>1699270076318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699270076318</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -55,5 +67,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="리드미 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="리드미 추가" />
   </component>
 </project>
