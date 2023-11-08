@@ -107,8 +107,11 @@ section {
     letter-spacing: -1px; }
   section .content_box {
     overflow: hidden; }
+    section .content_box article:hover .blind {
+      transform: translate3d(0.9375rem, 0, 0); }
     section .content_box .blind {
-      font-family: "Noto Sans KR", sans-serif; }
+      font-family: "Noto Sans KR", sans-serif;
+      transition: transform 0.4s cubic-bezier(0.33, 1, 0.68, 1); }
       section .content_box .blind .txt {
         font-size: 16px;
         margin-top: 15px;

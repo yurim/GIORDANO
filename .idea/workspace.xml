@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="634b7cc6-735b-479d-8180-2bf9d61f8902" name="Changes" comment="">
+    <list default="true" id="634b7cc6-735b-479d-8180-2bf9d61f8902" name="Changes" comment="리드미 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/.sass-cache/aac6fe663ff1947aa3cec99211eb4feb0dd26520/main.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/.sass-cache/aac6fe663ff1947aa3cec99211eb4feb0dd26520/main.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/reset.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,7 +44,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699269740604</updated>
-      <workItem from="1699269741963" duration="1667000" />
+      <workItem from="1699269741963" duration="1752000" />
+      <workItem from="1699429221532" duration="1092000" />
     </task>
     <task id="LOCAL-00001" summary="리드미 추가">
       <created>1699270076318</created>
