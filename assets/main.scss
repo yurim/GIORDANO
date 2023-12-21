@@ -37,7 +37,7 @@ header { position: fixed; width: 100%; min-width: 1470px; z-index: 1000; transit
 .swiper-wrapper { width: 100%; height: 100%; }
 .swiper-button-prev::after , .swiper-button-next::after { display: none;}
 .container { max-width: 1540px; margin: 0 auto; padding: 0 15px; position: relative; }
-
+main { overflow-x: hidden; }
 section { position: relative;
  .swiper-slide { width: 32%; }
  .swiper-button-prev , .swiper-button-next { color: #cdcdcd; width: 24px; height: 44px; margin-top: 0;}

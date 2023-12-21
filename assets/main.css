@@ -84,6 +84,9 @@ header {
   padding: 0 15px;
   position: relative; }
 
+main {
+  overflow-x: hidden; }
+
 section {
   position: relative; }
   section .swiper-slide {
